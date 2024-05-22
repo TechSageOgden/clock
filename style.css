@@ -24,7 +24,7 @@ nav {
 }
 
 div#digital-display {
-    margin-top: 15vh;
+    margin-top: 5vh;
     font-size: 5rem;
     font-weight: 900;
     letter-spacing: .2em;
@@ -32,8 +32,6 @@ div#digital-display {
 }
 
 div#digital-display div#digi-box {
-    border: 5px solid #222;
-    border-radius: 7px;
     height: 25vh;
     width: 57vw;
     padding-left: 1vw;
@@ -42,8 +40,6 @@ div#digital-display div#digi-box {
 }
 
 div#digital-display div#digi-box h1#digi-num {
-    position: relative;
-    top: -100%;
     transition: all ease-in-out .25s;
     animation: pulse 8s ease-in 0.5s infinite;
 }
@@ -54,10 +50,10 @@ div#date-display {
 
 @keyframes pulse {
     0% {opacity: 100%;}
-    25% {opacity: 47%;}
+    25% {opacity: 37%;}
     37% {opacity: 89%;}
-    55% {opacity: 25%;}
-    79% {opacity: 98%;}
+    55% {opacity: 15%;}
+    79% {opacity: 78%;}
     96% {opacity: 34%;}
 }
 
@@ -75,4 +71,23 @@ footer {
     height: 3%;
     box-shadow: -15px -5px 25px #555;
     border-radius: 1px;
+}
+
+@media (max-width: 1200px) {
+    div#digital-display {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    div#digital-display {
+        font-size: 2.2rem;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 500px) {
+    div#digital-display {
+    font-size: 1.9rem;
+    }
 }
